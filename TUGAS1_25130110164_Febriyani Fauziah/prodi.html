@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Studi | Universitas Goib</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color:#f4f7f6;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background-color:#003366;
+            color:white;
+            padding:15px 5%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo h1{
+            font-size:1.8rem;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#fca311;
+        }
+
+        .banner{
+            background:
+            linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)),
+            url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1350&q=80');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .banner h2{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:50px auto;
+        }
+
+        .section-title{
+            text-align:center;
+            color:#003366;
+            margin-bottom:40px;
+        }
+
+        .prodi-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .prodi-card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .prodi-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .prodi-card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .prodi-content{
+            padding:20px;
+        }
+
+        .prodi-content h3{
+            color:#003366;
+            margin-bottom:10px;
+        }
+
+        .prodi-content p{
+            color:#666;
+            text-align:justify;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+                margin-top:15px;
+                text-align:center;
+            }
+
+            .banner h2{
+                font-size:2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Universitas Goib</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="prodi.html">Program Studi</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Program Studi</h2>
+        <p>Pilih program studi yang sesuai dengan minat dan cita-cita Anda.</p>
+    </section>
+
+    <div class="container">
+
+        <h2 class="section-title">Program Studi Unggulan</h2>
+
+        <div class="prodi-grid">
+
+            <div class="prodi-card">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="Informatika">
+                <div class="prodi-content">
+                    <h3>S1 Informatika</h3>
+                    <p>Mempelajari pemrograman, kecerdasan buatan, pengembangan web, keamanan siber, dan teknologi informasi modern.</p>
+                </div>
+            </div>
+
+            <div class="prodi-card">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80" alt="Manajemen">
+                <div class="prodi-content">
+                    <h3>S1 Manajemen</h3>
+                    <p>Berfokus pada pengelolaan bisnis, sumber daya manusia, pemasaran, dan kewirausahaan berbasis inovasi.</p>
+                </div>
+            </div>
+
+            <div class="prodi-card">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Akuntansi">
+                <div class="prodi-content">
+                    <h3>S1 Akuntansi</h3>
+                    <p>Mempelajari pencatatan keuangan, audit, perpajakan, dan sistem informasi akuntansi perusahaan.</p>
+                </div>
+            </div>
+
+            <div class="prodi-card">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80" alt="Teknik Industri">
+                <div class="prodi-content">
+                    <h3>S1 Teknik Industri</h3>
+                    <p>Mengintegrasikan ilmu teknik dan manajemen untuk meningkatkan efisiensi sistem industri.</p>
+                </div>
+            </div>
+
+            <div class="prodi-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Ilmu Komunikasi">
+                <div class="prodi-content">
+                    <h3>S1 Ilmu Komunikasi</h3>
+                    <p>Mempelajari komunikasi massa, public relations, jurnalistik, dan media digital.</p>
+                </div>
+            </div>
+
+            <div class="prodi-card">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Pendidikan">
+                <div class="prodi-content">
+                    <h3>S1 Pendidikan</h3>
+                    <p>Mempersiapkan tenaga pendidik profesional dengan pendekatan pembelajaran modern dan kreatif.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Universitas Goib. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

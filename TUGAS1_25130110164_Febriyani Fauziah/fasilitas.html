@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas | Universitas Goib</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #fca311;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 51, 102, 0.7),
+                    rgba(0, 51, 102, 0.7)),
+                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80')
+                center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .banner h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 40px;
+        }
+
+        .facilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .facility-content {
+            padding: 20px;
+        }
+
+        .facility-content h3 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .facility-content p {
+            color: #666;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media(max-width:768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Univ. Goib</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="prodi.html">Program Studi</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Fasilitas Kampus</h2>
+        <p>Menunjang pembelajaran dan pengembangan mahasiswa dengan fasilitas modern.</p>
+    </section>
+
+    <div class="container">
+
+        <h2 class="section-title">Fasilitas Unggulan Universitas Goib</h2>
+
+        <div class="facilities">
+
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80"
+                    alt="Perpustakaan">
+                <div class="facility-content">
+                    <h3>Perpustakaan Digital</h3>
+                    <p>Tersedia ribuan buku cetak dan e-book yang dapat diakses mahasiswa kapan saja untuk mendukung kegiatan akademik.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                    alt="Laboratorium">
+                <div class="facility-content">
+                    <h3>Laboratorium Komputer</h3>
+                    <p>Dilengkapi perangkat komputer terbaru dan koneksi internet cepat untuk menunjang praktikum mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80"
+                    alt="Lapangan">
+                <div class="facility-content">
+                    <h3>Fasilitas Olahraga</h3>
+                    <p>Lapangan futsal, basket, badminton, dan pusat kebugaran untuk menjaga kesehatan dan prestasi mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+                    alt="Ruang Diskusi">
+                <div class="facility-content">
+                    <h3>Ruang Diskusi</h3>
+                    <p>Area belajar kolaboratif yang nyaman untuk mengerjakan tugas kelompok dan kegiatan organisasi mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80"
+                    alt="Kantin">
+                <div class="facility-content">
+                    <h3>Kantin Modern</h3>
+                    <p>Menyediakan berbagai pilihan makanan dan minuman dengan harga terjangkau bagi seluruh civitas akademika.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                    alt="WiFi">
+                <div class="facility-content">
+                    <h3>WiFi Kampus</h3>
+                    <p>Akses internet berkecepatan tinggi yang tersedia di seluruh area kampus untuk mendukung kegiatan belajar.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Universitas Goib. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+
+</html>

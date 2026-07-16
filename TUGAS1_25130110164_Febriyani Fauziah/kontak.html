@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Universitas Goib</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color:#f4f7f6;
+            color:#333;
+        }
+
+        header{
+            background-color:#003366;
+            color:white;
+            padding:15px 5%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo h1{
+            font-size:1.8rem;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+        }
+
+        nav ul li a:hover{
+            color:#fca311;
+        }
+
+        .banner{
+            background:linear-gradient(rgba(0,51,102,0.7),
+            rgba(0,51,102,0.7)),
+            url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .banner h2{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:50px auto;
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+        }
+
+        .contact-info,
+        .contact-form{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h3,
+        .contact-form h3{
+            color:#003366;
+            margin-bottom:20px;
+        }
+
+        .contact-info p{
+            margin-bottom:15px;
+        }
+
+        .form-group{
+            margin-bottom:15px;
+        }
+
+        .form-group label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        .form-group input,
+        .form-group textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .form-group textarea{
+            resize:vertical;
+            height:120px;
+        }
+
+        .btn{
+            background:#fca311;
+            color:black;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#e69500;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+                margin-top:15px;
+                text-align:center;
+            }
+
+            .container{
+                grid-template-columns:1fr;
+            }
+
+            .banner h2{
+                font-size:2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Universitas Goib</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="prodi.html">Program Studi</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Hubungi Kami</h2>
+        <p>Kami siap membantu menjawab pertanyaan Anda.</p>
+    </section>
+
+    <div class="container">
+
+        <div class="contact-info">
+            <h3>Informasi Kontak</h3>
+
+            <p><strong>📍 Alamat:</strong><br>
+            Jl. Pendidikan No. 123, Kota Goib, Indonesia</p>
+
+            <p><strong>📞 Telepon:</strong><br>
+            (021) 1234-5678</p>
+
+            <p><strong>📧 Email:</strong><br>
+            info@universitasGoib.ac.id</p>
+
+            <p><strong>🕒 Jam Operasional:</strong><br>
+            Senin - Jumat, 08.00 - 16.00 WIB</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Kirim Pesan</h3>
+
+            <form>
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Masukkan email Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Subjek</label>
+                    <input type="text" placeholder="Masukkan subjek">
+                </div>
+
+                <div class="form-group">
+                    <label>Pesan</label>
+                    <textarea placeholder="Tulis pesan Anda di sini"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Universitas Goib. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
